@@ -20,6 +20,8 @@ fn main(){
     copy(&mut input, &mut encoder).unwrap();
     let output = encoder.finish().unwrap();
     println!(
-        "Source len: {}"
-    )
+        "Source len: {}",
+        input get_ref().metadata.unwrap.len()
+    );
+    print
 }
