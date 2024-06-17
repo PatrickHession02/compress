@@ -23,5 +23,6 @@ fn main(){
         "Source len: {}",
         input get_ref().metadata.unwrap.len()
     );
-    print
+    println!("Target len:{:?}",output metadata().unwrap().len());
+    
 }
