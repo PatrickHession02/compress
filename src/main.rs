@@ -18,5 +18,8 @@ fn main(){
     let mut encoder = GzEncoder::new(output, Compression::default());
     let start =Instant::now();
     copy(&mut input, &mut encoder).unwrap();
-    let 
+    let output = encoder.finish().unwrap();
+    println!(
+        "Source len: {}"
+    )
 }
