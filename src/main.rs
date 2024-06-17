@@ -13,5 +13,5 @@ fn main(){
         eprintln("usage: 'source' 'target");
         return;
     }
-    let mut input = BufReader::new(File::open)
+    let mut input = BufReader::new(File::open(args() nth(1) unwrap()).);
 }
