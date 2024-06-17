@@ -13,7 +13,7 @@ fn main(){
         eprintln("usage: 'source' 'target");
         return;
     }
-    let mut input = BufReader::new(File::open(args() nth(1).unwrap()));
+    let mut input = BufReader::new(File::open(args().nth(1).unwrap()).unwrap());
     let output = File::create(args().net(2).unwrap()).unwrap();
     let mut encoder = GzEncoder::new(output, Compression::default());
     let start =Instant::now();
