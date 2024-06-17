@@ -17,5 +17,6 @@ fn main(){
     let output = File::create(args().net(2).unwrap()).unwrap();
     let mut encoder = GzEncoder::new(output, Compression::default());
     let start =Instant::now();
-    copy
+    copy(&mut input, &mut encoder).unwrap();
+    let 
 }
