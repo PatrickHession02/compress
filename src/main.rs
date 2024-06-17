@@ -10,6 +10,8 @@ use std::time::Instant;
 
 fn main(){
     if args().len() !=3{
-        eprintln("usage: 'source' 'target")
+        eprintln("usage: 'source' 'target");
+        return;
     }
+    let mut input = BufReader::new(File::open)
 }
