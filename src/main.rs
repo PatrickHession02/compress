@@ -10,7 +10,7 @@ use std::time::Instant;
 
 fn main(){
     if args().len() !=3{
-        eprintln("usage: 'source' 'target");
+        eprintln!("usage: 'source' 'target");
         return;
     }
     let mut input = BufReader::new(File::open(args().nth(1).unwrap()).unwrap());
@@ -24,5 +24,5 @@ fn main(){
         input.get_ref().metadata.unwrap.len()
     );
     println!("Target len:{:?}",output.metadata().unwrap().len());
-    println!("Time taken: {:?}", start elapsed());
+    println!("Time taken: {:?}", start.elapsed());
 }
